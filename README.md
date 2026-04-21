@@ -1,53 +1,101 @@
-# 🌐 Mercy Vocational Training Centre (MVTC)
+# 🌐 Mercy Vocational Training Centre (MVTC) – Chepareria
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)
 ![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)
-![v0](https://img.shields.io/badge/Built%20with-v0-blue)
-![License](https://img.shields.io/badge/License-Private-red)
 ![Status](https://img.shields.io/badge/Status-Active-success)
+![TVET](https://img.shields.io/badge/TVET-Registered-blue)
+![License](https://img.shields.io/badge/License-Private-red)
 
-Official website for **Our Lady of Mercy College – Mercy Vocational Training Centre (Chepareria)**.  
-This platform showcases programs, admissions, impact, and community engagement.
-
----
-
-## 🚀 Overview
-
-This project is a modern, responsive website built using **Next.js** and generated with **v0**.
-
-It is designed to:
-- Promote vocational training programs
-- Increase student enrollment
-- Highlight institutional impact
-- Provide accessible information to students, parents, and partners
+Official website for **Our Lady of Mercy College – Mercy Vocational Training Centre (Chepareria)**, a faith-based technical training institution in West Pokot County, Kenya.
 
 ---
 
-## 🛠️ Tech Stack
+## 🏫 About MVTC
 
-- **Framework:** [Next.js](https://nextjs.org)
-- **UI Generation:** [v0](https://v0.app)
-- **Styling:** Tailwind CSS
-- **Deployment:** Vercel
+Mercy Vocational Training Centre (MVTC) is a **private TVET institution** registered in Kenya and managed by the **Sisters of Mercy**.
 
----
+Located in **Chepareria, West Pokot County**, the centre was established as part of the Sisters of Mercy mission to expand access to education and skills training, particularly in underserved rural communities. :contentReference[oaicite:0]{index=0}  
 
-## 🔗 v0 Integration
+The institution focuses on:
+- Technical and vocational skills development  
+- Empowerment of youth and women  
+- Promotion of self-reliance and entrepreneurship  
 
-This repository is connected to a **v0 project**, enabling rapid UI iteration.
-
-- Changes can be made directly via v0
-- Updates are automatically committed to this repository
-- Every merge to `main` triggers a deployment
-
-👉 **Continue building in v0:**  
-https://v0.app/chat/projects/prj_kCcCv8BDE2EhvmSVFU4J8vcG5dpd
+The centre has historically supported learners—especially young women—who may have had limited access to formal education, equipping them with practical skills for sustainable livelihoods. :contentReference[oaicite:1]{index=1}  
 
 ---
 
-## ⚙️ Getting Started
+## 🎯 Mission & Vision
 
-Clone the repository and install dependencies:
+**Mission:**  
+To empower students through technical and social skills training for holistic human development and self-reliance.
+
+**Vision:**  
+To be a leading vocational training institution producing skilled, reliable, and self-reliant graduates.
+
+---
+
+## 🎓 Programs Offered
+
+MVTC provides **practical, hands-on training** at Artisan and Craft levels in various fields, including:
+
+- Tailoring, Dressmaking & Garment Making  
+- Hairdressing & Beauty Therapy  
+- Food & Beverage Production  
+- Information & Communication Technology (ICT)  
+- Electrical Installation  
+
+Programs are examined by national bodies such as:
+- KNEC  
+- NITA  
+- CDACC  
+
+The institution is licensed by the **Technical and Vocational Education and Training Authority (TVETA)**. :contentReference[oaicite:2]{index=2}  
+
+---
+
+## 🌍 Impact & Community Role
+
+MVTC plays a critical role in community development by:
+
+- Providing **market-driven technical skills**
+- Reducing unemployment through **self-employment opportunities**
+- Supporting **women empowerment and social inclusion**
+- Enabling graduates to start businesses or gain employment  
+- Contributing to **local economic growth**
+
+Graduates often establish small enterprises such as tailoring shops or service businesses, strengthening the local economy and creating further employment opportunities. :contentReference[oaicite:3]{index=3}  
+
+---
+
+## 🏢 Facilities & Services
+
+- Practical training workshops  
+- Computer lab & ICT training  
+- Boarding and accommodation  
+- Catering and conference services  
+- Production units (e.g., uniforms, garments)  
+
+---
+
+## 📍 Location
+
+Chepareria, West Pokot County, Kenya  
+Near Kapenguria along the Kitale–Lodwar road  
+
+---
+
+## ⚙️ Tech Stack (Website)
+
+- **Framework:** Next.js  
+- **Styling:** Tailwind CSS  
+- **Deployment:** Vercel  
+
+---
+
+## 🚀 Getting Started
+
+Install dependencies:
 
 ```bash
 npm install
