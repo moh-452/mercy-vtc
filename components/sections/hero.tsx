@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -35,7 +35,9 @@ const slides = [
 
 export function HeroSection() {
   const [current, setCurrent] = useState(0)
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([])
 
+  // Auto slide
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length)
@@ -43,6 +45,20 @@ export function HeroSection() {
 
     return () => clearInterval(interval)
   }, [])
+
+  // Control video playback
+  useEffect(() => {
+    videoRefs.current.forEach((video, index) => {
+      if (!video) return
+
+      if (index === current) {
+        video.currentTime = 0
+        video.play().catch(() => {})
+      } else {
+        video.pause()
+      }
+    })
+  }, [current])
 
   const slide = slides[current]
 
@@ -69,11 +85,12 @@ export function HeroSection() {
               />
             ) : (
               <video
+                ref={(el) => (videoRefs.current[index] = el)}
                 src={item.src}
-                autoPlay
                 muted
                 loop
                 playsInline
+                preload="metadata"
                 className="w-full h-full object-cover"
               />
             )}
@@ -87,22 +104,18 @@ export function HeroSection() {
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 pt-20 text-white">
         <div className="max-w-3xl transition-all duration-700">
-          {/* Dynamic Tag */}
           <div className="inline-flex items-center gap-2 rounded-full bg-primary/20 px-4 py-2 text-sm text-primary mb-6 backdrop-blur">
             {slide.tag}
           </div>
 
-          {/* Dynamic Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
             {slide.title}
           </h1>
 
-          {/* Dynamic Description */}
           <p className="mt-6 text-lg sm:text-xl text-gray-200 max-w-2xl">
             {slide.description}
           </p>
 
-          {/* Buttons */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="gap-2">
               <Link href="#admissions">
@@ -110,7 +123,12 @@ export function HeroSection() {
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="gap-2 text-white border-white hover:bg-white hover:text-black">
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="gap-2 text-white border-white hover:bg-white hover:text-black"
+            >
               <Link href="#programs">
                 <Play className="h-4 w-4" />
                 Explore Programs
