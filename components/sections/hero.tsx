@@ -85,7 +85,7 @@ export function HeroSection() {
               />
             ) : (
               <video
-                ref={(el) => (videoRefs.current[index] = el)}
+                ref={(el) => { videoRefs.current[index] = el }}
                 src={item.src}
                 muted
                 loop
