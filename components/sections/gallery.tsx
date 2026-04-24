@@ -58,12 +58,12 @@ const galleryImages = [
     category: "Training",
   },
   {
-    src: "/images/graduation.jpg",
+    src: "/images/5.jpeg",
     alt: "Graduation ceremony",
     category: "Graduation",
   },
   {
-    src: "/images/campus.jpg",
+    src: "/images/6.jpeg",
     alt: "College campus",
     category: "Campus",
   },
