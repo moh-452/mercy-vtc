@@ -37,6 +37,36 @@ const galleryImages = [
     alt: "College campus",
     category: "Campus",
   },
+  {
+    src: "/images/1.jpeg",
+    alt: "Students in electrical workshop",
+    category: "Workshop",
+  },
+  {
+    src: "/images/2.jpeg",
+    alt: "Tailoring and dressmaking class",
+    category: "Training",
+  },
+  {
+    src: "/images/ict-lab.jpg",
+    alt: "ICT computer laboratory",
+    category: "Facilities",
+  },
+  {
+    src: "/images/beauty-therapy.jpg",
+    alt: "Beauty therapy training",
+    category: "Training",
+  },
+  {
+    src: "/images/graduation.jpg",
+    alt: "Graduation ceremony",
+    category: "Graduation",
+  },
+  {
+    src: "/images/campus.jpg",
+    alt: "College campus",
+    category: "Campus",
+  },
 ]
 
 export function GallerySection() {
