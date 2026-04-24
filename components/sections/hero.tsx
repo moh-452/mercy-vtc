@@ -17,7 +17,7 @@ const slides = [
   },
   {
     type: "image",
-    src: "/images/classroom.jpg",
+    src: "/images/ict-lab.jpg",
     title: "Modern Classrooms & Expert Training",
     description:
       "Experience industry-standard facilities and learn from experienced instructors dedicated to your growth.",
