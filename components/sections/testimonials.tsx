@@ -12,7 +12,7 @@ const testimonials = [
   },
   {
     name: "Joseph Lokol",
-    role: "Electrical Installation Graduate, 2022",
+    role: "Electrical Installation Graduate, 2023",
     content:
       "I came here with nothing but hope. Today, I work as an electrician for a construction company. The hands-on training prepared me for real work situations.",
     initials: "JL",
