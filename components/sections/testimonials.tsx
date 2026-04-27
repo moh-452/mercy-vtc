@@ -19,7 +19,7 @@ const testimonials = [
   },
   {
     name: "Grace Amoit",
-    role: "ICT Graduate, 2023",
+    role: "ICT Graduate, 2025",
     content:
       "The computer skills I learned here opened doors I never thought possible. I now work in an office and can help others in my community learn technology too.",
     initials: "GA",
