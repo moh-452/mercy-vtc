@@ -1,4 +1,7 @@
+"use client"
+
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -48,6 +51,18 @@ const requirements = [
 ]
 
 export function AdmissionsSection() {
+  const router = useRouter()
+
+  // Apply Now button action
+  const handleApplyNow = () => {
+    router.push("/apply")
+  }
+
+  // Download Form button action
+  const handleDownloadForm = () => {
+    window.open("/documents/application-form.pdf", "_blank")
+  }
+
   return (
     <section id="admissions" className="py-20">
       <div className="container mx-auto px-4">
@@ -78,7 +93,9 @@ export function AdmissionsSection() {
                   className="flex items-center justify-between p-4 rounded-lg bg-secondary/50"
                 >
                   <div>
-                    <p className="font-semibold text-foreground">{intake.month}</p>
+                    <p className="font-semibold text-foreground">
+                      {intake.month}
+                    </p>
                     <p className="text-sm text-muted-foreground">
                       Deadline: {intake.deadline}
                     </p>
@@ -90,12 +107,6 @@ export function AdmissionsSection() {
                   </Badge>
                 </div>
               ))}
-              <div className="pt-4 border-t">
-                <p className="text-sm text-muted-foreground mb-2">
-                  <strong>Affordable Fees</strong> – We offer flexible payment
-                  plans to make education accessible.
-                </p>
-              </div>
             </CardContent>
           </Card>
 
@@ -107,52 +118,35 @@ export function AdmissionsSection() {
                 How to Apply
               </CardTitle>
             </CardHeader>
+
             <CardContent>
-              <div className="grid sm:grid-cols-2 gap-6 mb-8">
-                {steps.map((step, index) => (
-                  <div key={step.step} className="flex gap-4">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground font-bold shrink-0">
-                      {step.step}
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground">{step.title}</h4>
-                      <p className="text-sm text-muted-foreground">
-                        {step.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Requirements */}
-              <div className="p-4 rounded-lg bg-secondary/50 mb-6">
-                <h4 className="font-semibold text-foreground mb-3">
-                  Requirements
-                </h4>
-                <ul className="grid sm:grid-cols-2 gap-2">
-                  {requirements.map((req) => (
-                    <li
-                      key={req}
-                      className="flex items-center gap-2 text-sm text-muted-foreground"
-                    >
-                      <CheckCircle className="h-4 w-4 text-primary shrink-0" />
-                      {req}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="gap-2">
+                <Button
+                  size="lg"
+                  className="gap-2"
+                  onClick={handleApplyNow}
+                >
                   <ArrowRight className="h-4 w-4" />
                   Apply Now
                 </Button>
-                <Button variant="outline" size="lg" className="gap-2">
+
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="gap-2"
+                  onClick={handleDownloadForm}
+                >
                   <Download className="h-4 w-4" />
                   Download Form
                 </Button>
-                <Button variant="ghost" size="lg" className="gap-2" asChild>
+
+                <Button
+                  variant="ghost"
+                  size="lg"
+                  className="gap-2"
+                  asChild
+                >
                   <Link href="#contact">
                     <Phone className="h-4 w-4" />
                     Contact Admissions

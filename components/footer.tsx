@@ -35,7 +35,7 @@ export function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
+              <div className="flex h-10 w-10 items-center justify-center  bg-primary">
                  <Image
                 src="/logo.png"
                 alt="Our Lady of Mercy Vocational Training Centre"
