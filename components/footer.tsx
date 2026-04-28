@@ -1,6 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
-import { Facebook, Twitter, Instagram, Youtube } from "lucide-react"
+import { GraduationCap, Facebook, Twitter, Instagram, Youtube } from "lucide-react"
 
 const quickLinks = [
   { href: "#about", label: "About Us" },
@@ -29,26 +28,25 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-background/5 dark:bg-foreground/95 text-foreground dark:text-background">
+    <footer className="bg-foreground text-background">
       <div className="container mx-auto px-4 py-12">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-4">
-              <Image
-                src="/logo.png"
-                alt="Our Lady of Mercy Vocational Training Centre"
-                width={1200}
-                height={1000}
-                className="h-12 w-auto"
-                priority
-              />
+            <Link href="/" className="flex items-center gap-2 mb-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
+                <GraduationCap className="h-6 w-6 text-primary-foreground" />
+              </div>
               <div>
-                <p className="font-bold text-foreground leading-tight">Our Lady of Mercy</p>
-                <p className="text-xs text-foreground/70">Vocational Training Centre</p>
+                <p className="font-bold text-background leading-tight">
+                  Our Lady of Mercy
+                </p>
+                <p className="text-xs text-background/70">
+                  Vocational Training Centre
+                </p>
               </div>
             </Link>
-            <p className="text-sm text-foreground/70 mb-4">
+            <p className="text-sm text-background/70 mb-4">
               Empowering skills for a better future. A Christian faith-based
               institution managed by the Sisters of Mercy.
             </p>
@@ -57,10 +55,10 @@ export function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
-                  className="flex items-center justify-center w-11 h-11 rounded-full bg-background/10 hover:bg-primary hover:text-primary-foreground transition-colors ring-1 ring-border/10"
+                  className="flex items-center justify-center w-10 h-10 rounded-full bg-background/10 hover:bg-primary hover:text-primary-foreground transition-colors ring-1 ring-border/10"
                   aria-label={social.label}
                 >
-                  <social.icon className="h-6 w-6" />
+                  <social.icon className="h-5 w-5" />
                 </a>
               ))}
             </div>
@@ -68,13 +66,13 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-background mb-4">Quick Links</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                    className="text-sm text-background/70 hover:text-primary transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -85,13 +83,13 @@ export function Footer() {
 
           {/* Programs */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Programs</h3>
+            <h3 className="font-semibold text-background mb-4">Programs</h3>
             <ul className="space-y-2">
               {programs.map((program) => (
                 <li key={program}>
                   <Link
                     href="#programs"
-                    className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                    className="text-sm text-background/70 hover:text-primary transition-colors"
                   >
                     {program}
                   </Link>
@@ -102,8 +100,8 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Contact</h3>
-            <ul className="space-y-2 text-sm text-foreground/70">
+            <h3 className="font-semibold text-background mb-4">Contact</h3>
+            <ul className="space-y-2 text-sm text-background/70">
               <li>Chepareria, West Pokot County</li>
               <li>P.O Box 318-30600, Kitale</li>
               <li>ourladyofmercycollege@gmail.com</li>
@@ -114,20 +112,20 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border/20">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-foreground/70">
+            <p className="text-sm text-background/70">
               © {new Date().getFullYear()} Our Lady of Mercy College. All rights
               reserved.
             </p>
             <div className="flex gap-6">
               <Link
                 href="#"
-                className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                className="text-sm text-background/70 hover:text-primary transition-colors"
               >
                 Privacy Policy
               </Link>
               <Link
                 href="#"
-                className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                className="text-sm text-background/70 hover:text-primary transition-colors"
               >
                 Terms of Service
               </Link>
