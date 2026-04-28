@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -50,7 +51,17 @@ const requirements = [
 ]
 
 export function AdmissionsSection() {
-  // Use Link/asChild for client navigation and anchor download for efficiency
+  const router = useRouter()
+
+  // Apply Now button action
+  const handleApplyNow = () => {
+    router.push("/apply")
+  }
+
+  // Download Form button action
+  const handleDownloadForm = () => {
+    window.open("/documents/application-form.pdf", "_blank")
+  }
 
   return (
     <section id="admissions" className="py-20">
@@ -111,28 +122,34 @@ export function AdmissionsSection() {
             <CardContent>
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="gap-2" asChild>
-                  <Link href="/apply" aria-label="Apply Now">
-                    <ArrowRight className="h-5 w-5" />
-                    <span>Apply Now</span>
-                  </Link>
+                <Button
+                  size="lg"
+                  className="gap-2"
+                  onClick={handleApplyNow}
+                >
+                  <ArrowRight className="h-4 w-4" />
+                  Apply Now
                 </Button>
 
-                <Button variant="outline" size="lg" className="gap-2" asChild>
-                  <a
-                    href="/documents/application-form.pdf"
-                    download
-                    aria-label="Download Application Form"
-                  >
-                    <Download className="h-5 w-5" />
-                    <span>Download Form</span>
-                  </a>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="gap-2"
+                  onClick={handleDownloadForm}
+                >
+                  <Download className="h-4 w-4" />
+                  Download Form
                 </Button>
 
-                <Button variant="ghost" size="lg" className="gap-2" asChild>
-                  <Link href="#contact" aria-label="Contact Admissions">
-                    <Phone className="h-5 w-5" />
-                    <span>Contact Admissions</span>
+                <Button
+                  variant="ghost"
+                  size="lg"
+                  className="gap-2"
+                  asChild
+                >
+                  <Link href="#contact">
+                    <Phone className="h-4 w-4" />
+                    Contact Admissions
                   </Link>
                 </Button>
               </div>
