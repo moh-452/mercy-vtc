@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { GraduationCap, Facebook, Twitter, Instagram, Youtube } from "lucide-react"
 
 const quickLinks = [
@@ -35,7 +36,14 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-                <GraduationCap className="h-6 w-6 text-primary-foreground" />
+                 <Image
+                src="/logo.png"
+                alt="Our Lady of Mercy Vocational Training Centre"
+                width={1200}
+                height={1000}
+                className="h-12 w-auto"
+                priority
+              />
               </div>
               <div>
                 <p className="font-bold text-background leading-tight">
