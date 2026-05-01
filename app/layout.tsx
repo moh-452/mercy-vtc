@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Our Lady of Mercy College | Mercy Vocational Training Centre',
+  title: 'Chepareria-Our-Lady-of-Mercy-Vocational-Training-Centre',
   description: 'Empowering skills for a better future. A leading vocational training institution in Chepareria, West Pokot County, Kenya offering technical and practical skills training.',
   keywords: ['vocational training', 'TVET', 'Kenya', 'West Pokot', 'technical skills', 'education', 'Chepareria'],
   authors: [{ name: 'Our Lady of Mercy College' }],
