@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
-      { url: '/icon-light-32x32.png', sizes: '32x32', media: '(prefers-color-scheme: light)' },
-      { url: '/icon-dark-32x32.png', sizes: '32x32', media: '(prefers-color-scheme: dark)' },
+      { url: '/android-touch-icon.png', type: 'image/svg+xml' },
+      { url: '/android-chrome-192x192.png', sizes: '192x192', media: '(prefers-color-scheme: light)' },
+      { url: '/android-chrome-512x512.png', sizes: '512x512', media: '(prefers-color-scheme: dark)' },
     ],
     apple: '/apple-touch-icon.png',
   },
