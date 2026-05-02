@@ -22,6 +22,15 @@ export const metadata: Metadata = {
     title: 'Chepareria-Our-Lady-of-Mercy-Vocational-Training-Centre',
     description: 'Empowering skills for a better future through technical and vocational education.',
     type: 'website',
+    images: ['/logo.png'],
+  },
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon-light-32x32.png', sizes: '32x32', media: '(prefers-color-scheme: light)' },
+      { url: '/icon-dark-32x32.png', sizes: '32x32', media: '(prefers-color-scheme: dark)' },
+    ],
+    apple: '/apple-icon.png',
   },
 }
 
