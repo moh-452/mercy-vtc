@@ -121,7 +121,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-border/20 dark:border-border/40">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-background/70 dark:text-foreground/70">
-              © {new Date().getFullYear()} Our Lady of Mercy College. All rights
+              © {new Date().getFullYear()} Mercy-Vocational-Training-Centre-Chepareria. All rights
               reserved.
             </p>
             <div className="flex gap-6">
