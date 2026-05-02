@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   keywords: ['vocational training', 'TVET', 'Kenya', 'West Pokot', 'technical skills', 'education', 'Chepareria'],
   authors: [{ name: 'Our Lady of Mercy College' }],
   openGraph: {
-    title: 'Our Lady of Mercy College | Mercy Vocational Training Centre',
+    title: 'Chepareria-Our-Lady-of-Mercy-Vocational-Training-Centre',
     description: 'Empowering skills for a better future through technical and vocational education.',
     type: 'website',
   },
