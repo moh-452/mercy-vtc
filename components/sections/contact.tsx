@@ -108,7 +108,7 @@ export function ContactSection() {
                       Monday - Friday: 8:00 AM - 5:00 PM
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      Saturday: 8:00 AM - 12:00 PM
+                      Saturday: Closed
                     </p>
                   </div>
                 </div>
