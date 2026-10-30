@@ -43,7 +43,7 @@ MVTC provides **practical, hands-on training** at Artisan and Craft levels in va
 - Hairdressing & Beauty Therapy  
 - Food & Beverage Production  
 - Information & Communication Technology (ICT)  
-- Electrical Installation  
+  
 
 Programs are examined by national bodies such as:
 - KNEC  
