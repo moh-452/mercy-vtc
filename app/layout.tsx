@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   description: 'Empowering skills for a better future. A leading vocational training institution in Chepareria, West Pokot County, Kenya offering technical and practical skills training.',
   keywords: ['vocational training', 'TVET', 'Kenya', 'West Pokot', 'technical skills', 'education', 'Chepareria'],
   authors: [{ name: 'Our Lady of Mercy College' }],
+  verification: {
+    google: 'YOUR_GOOGLE_VERIFICATION_CODE',
+  },
   openGraph: {
     title: 'Mercy-Vocational-Training-Centre-Chepareria',
     description: 'Empowering skills for a better future through technical and vocational education.',
